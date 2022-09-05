@@ -388,7 +388,78 @@ input::-ms-clear {
   width: 15px;
   height: 15px; }
 
-.text {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 30px;
-  font-weight: bold; }
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.nav__container {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1296px; }
+
+.nav-logo__img {
+  width: 150px; }
+
+.nav-menu {
+  display: flex;
+  align-items: center; }
+  .nav-menu__item {
+    margin: 0 15px; }
+    .nav-menu__item:first-child {
+      margin-left: 0; }
+    .nav-menu__item:last-child {
+      margin-right: 0; }
+    .nav-menu__item-link {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 17px;
+      color: #222222;
+      letter-spacing: 0.18px; }
+
+.nav-right {
+  display: flex;
+  align-items: center; }
+  .nav-right__cart {
+    margin-right: 29px;
+    display: flex;
+    align-items: center; }
+    .nav-right__cart-img {
+      margin-right: 8px;
+      width: 17px; }
+    .nav-right__cart-text {
+      margin-right: 16px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 17px;
+      color: #000; }
+    .nav-right__cart-amount {
+      padding-top: 3px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 11px;
+      color: #3F53D8; }
+  .nav-right__button {
+    padding: 19px 37px 20px 37px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 18px;
+    color: #080829;
+    letter-spacing: 0.4px;
+    border: 1px solid #080829;
+    border-color: rgba(8, 8, 41, 0.2);
+    border-radius: 14px; }
+
+@media (min-width: 993px) {
+  .nav-menu__item-link {
+    transition: color 0.5s ease; }
+    .nav-menu__item-link:hover {
+      color: #3F53D8; }
+  .nav-right__button {
+    transition: color 0.4s ease, background-color 0.6s ease; }
+    .nav-right__button:hover {
+      color: #fff;
+      background-color: #3F53D8; } }

@@ -1,0 +1,49 @@
+.nav
+  &__container
+    padding: 20px 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 1296px
+  &-logo
+    &__img
+      width: 150px
+  &-menu
+    display: flex
+    align-items: center
+    &__item
+      margin: 0 15px
+      &:first-child
+        margin-left: 0
+      &:last-child
+        margin-right: 0
+      &-link
+        +PJS(17px)
+        color: #222222
+        letter-spacing: 0.18px
+  &-right
+    display: flex
+    align-items: center
+    &__cart
+      margin-right: 29px
+      display: flex
+      align-items: center
+      &-img
+        margin-right: 8px
+        width: 17px
+      &-text
+        margin-right: 16px
+        +PJS(17px)
+        color: #000
+      &-amount
+        padding-top: 3px
+        +PJS(11px)
+        color: #3F53D8
+    &__button
+      padding: 19px 37px 20px 37px
+      +PJS(18px)
+      color: #080829
+      letter-spacing: 0.4px
+      border: 1px solid #080829
+      border-color: rgba(8, 8, 41, 0.2)
+      border-radius: 14px
