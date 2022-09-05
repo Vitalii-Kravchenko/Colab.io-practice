@@ -1,0 +1,70 @@
+*
+  box-sizing: border-box
+
+select
+  -moz-appearance: none
+  -webkit-appearance: none
+
+select::-ms-value
+  background: none
+
+select::-ms-expand
+  display: none
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+  -webkit-appearance: none
+  margin: 0
+
+/* Firefox */
+input[type=number]
+  -moz-appearance: textfield
+
+a
+  text-decoration: none
+  color: inherit
+  font-family: inherit
+  border: none
+  outline: none
+  -webkit-tap-highlight-color: transparent
+  &:active
+    outline: none
+    border: none
+
+button
+  font-family: inherit
+  color: inherit
+  outline: none
+  border: none
+  background: none
+  cursor: pointer
+  -webkit-tap-highlight-color: transparent
+
+input
+  font-family: inherit
+  color: inherit
+  background: none
+  border: none
+  outline: none
+  -webkit-appearance: none
+  &::placeholder
+    opacity: 1
+  &::placeholder
+    color: inherit
+    opacity: 1
+  &:invalid
+    box-shadow: none
+
+img
+  width: 100%
+  user-select: none
+  -moz-user-select: none
+  -ms-user-select: none !important
+  -webkit-user-select: none !important
+
+select::-ms-expand
+  display: none
+
+input::-ms-clear
+  width: 15px
+  height: 15px
